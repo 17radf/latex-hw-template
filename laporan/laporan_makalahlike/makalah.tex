@@ -1,0 +1,90 @@
+\documentclass[a4paper]{article}
+
+\usepackage[a4paper]{geometry}
+\usepackage{graphicx}
+\usepackage{mathptmx}
+\usepackage{listings}
+\usepackage[backend=biber
+]{biblatex}
+\addbibresource{refs.bib}
+
+\renewcommand*\contentsname{Daftar Isi}
+
+\begin{document}
+
+\begin{center}
+
+  %------------------------ Cover -----------------------
+
+  {\huge \bfseries Judul Laporan}
+  \\[0.7em]
+  Disusun untuk memenuhi tugas mata kuliah {\it Judul Mata Kuliah}
+  \\[0.3em]
+  Dosen Pengampu: Nama Dosen
+  \\[10em]
+
+  % logo poliyeay
+  \includegraphics[width=13em]{figs/poliyeay.png}
+  \\[3em]
+{\normalfont Raihan Achmad Dani Firmansyah}
+  \\[0.7em]
+
+{\normalfont E41210369}
+  \\[15em]
+{\Large Program Studi Teknik Informatika}
+  \\[0.7em]
+{\Large Jurusan Teknik Informasi}
+  \\[0.7em]
+{\Large Politeknik Negeri Jember}
+  \\[0.7em]
+{\Large 2021}
+
+\end{center}
+
+%------------------------ Daftar Isi -----------------------
+\newpage
+\begin{center}
+\tableofcontents
+\end{center}
+
+%------------------------ Pendahuluan -----------------------
+\newpage
+\section{Pendahuluan}
+
+%------------------------ Hasil Praktik -----------------------
+\newpage
+\section{Hasil Praktik}
+
+\begin{enumerate}
+  \item 
+  {\bfseries Soal:} Tanda “ ” pada nilai variabel biasanya menandakan sebuah string, tetapi pada saat
+  dilakukan operasi penjumlahan ternyata menghasilkan nilai jumlah seperti pada
+  umumnya penjumlahan aritmatika, mengapa bisa terjadi? (variable dan tipe data)
+  \\
+  {\bfseries Jawaban:} Karena jika variable itu adalah bertipe data String dan dilakukan operasi dengan operator aritmatika penjumlahan maka variabel tersebut akan dikonversikan ke tipe data Integer
+
+  \begin{lstlisting}[language=PHP]
+    <?php 
+      $satu = 90;
+      $dua = 80;
+
+      echo $satu . $dua;
+    ?>
+  \end{lstlisting}
+
+\end{enumerate}
+%------------------------ Kesimpulan -----------------------
+  \newpage
+  \section{Kesimpulan}
+
+%------------------------ Daftar Pustaka -----------------------
+  \newpage
+
+  \nocite{bkpm}
+  \nocite{wstack}
+
+  \begin{center}
+  \printbibliography[heading=bibintoc,title={Daftar Pustaka}]
+  \end{center}
+
+\end{document}
