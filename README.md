@@ -1,10 +1,5 @@
 Latex Homework Template
 =======================
+![yoyoy](https://media.giphy.com/media/l0K4jDs7BvA3M8QOQ/giphy.gif)
 
-These are the templates for my assignments, it is still a mess though (im still learning latex).
-
-## Features atau Fitur
-
-1. Makalah.
-2. Quiz atau bisa juga laporan.
-
+These are the templates for my assignments, it is still a mess though. 
