@@ -4,6 +4,9 @@
 \usepackage{graphicx}
 \usepackage{mathptmx}
 \usepackage{listings}
+\usepackage{indentfirst}
+\usepackage{sectsty}
+\allsectionsfont{\centering}
 \usepackage[backend=biber
 ]{biblatex}
 \addbibresource{refs.bib}
@@ -14,30 +17,35 @@
 
 \begin{center}
 
-  %------------------------ Cover -----------------------
+%------------------------ Cover -----------------------
 
+  %------------------------ Judul -----------------------
   {\huge \bfseries Judul Laporan}
   \\[0.7em]
+  %------------------------ Mata Kuliah -----------------------
   Disusun untuk memenuhi tugas mata kuliah {\it Judul Mata Kuliah}
   \\[0.3em]
+  %------------------------ Nama Dosen -----------------------
   Dosen Pengampu: Nama Dosen
   \\[10em]
 
-  % logo poliyeay
-  \includegraphics[width=13em]{figs/poliyeay.png}
+  %------------------------ Logo Poliyeay -----------------------
+  \includegraphics[width=15em]{figs/poliyeay.png}
   \\[3em]
-{\normalfont Raihan Achmad Dani Firmansyah}
+  %------------------------ Pribadi -----------------------
+  {\large Raihan Achmad Dani Firmansyah}
   \\[0.7em]
-
-{\normalfont E41210369}
+  {\large E41210369}
   \\[15em]
-{\Large Program Studi Teknik Informatika}
-  \\[0.7em]
-{\Large Jurusan Teknik Informasi}
-  \\[0.7em]
-{\Large Politeknik Negeri Jember}
-  \\[0.7em]
-{\Large 2021}
+
+  %------------------------ Kampus/Prodi/Jurusan -----------------------
+  {\Large Program Studi Teknik Informatika}
+    \\[0.7em]
+  {\Large Jurusan Teknik Informasi}
+    \\[0.7em]
+  {\Large Politeknik Negeri Jember}
+    \\[0.7em]
+  {\Large 2021}
 
 \end{center}
 
@@ -63,7 +71,7 @@
   \\
   {\bfseries Jawaban:} Karena jika variable itu adalah bertipe data String dan dilakukan operasi dengan operator aritmatika penjumlahan maka variabel tersebut akan dikonversikan ke tipe data Integer
 
-  \begin{lstlisting}[language=PHP]
+  \begin{lstlisting}[breaklines=true]
     <?php 
       $satu = 90;
       $dua = 80;
