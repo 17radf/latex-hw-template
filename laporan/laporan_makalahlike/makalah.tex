@@ -1,4 +1,4 @@
-\documentclass[a4paper]{article}
+\documentclass[a4paper, 12pt]{article}
 
 % page margin
 \usepackage[a4paper]{geometry}
@@ -10,6 +10,17 @@
 \usepackage{sectsty} % for modifying section
 \usepackage{setspace} % buat spacing
 \usepackage{array} % buat tabel array
+% \usepackage{hyperref}
+% \urlstyle{same}
+% \hypersetup{
+%     colorlinks=true,
+%     linkcolor=blue,
+%     filecolor=magenta,      
+%     urlcolor=blue,
+%     pdftitle={Overleaf Example},
+%     pdfpagemode=FullScreen,
+%     }
+
 
 \allsectionsfont{\centering}
 \usepackage[
@@ -19,6 +30,7 @@ style=authoryear-ibid,
 \addbibresource{refs.bib}
 \onehalfspacing
 \def\arraystretch{1.5}
+\setcounter{secnumdepth}{4}
 \renewcommand*\contentsname{Daftar Isi}
 
 \begin{document}
@@ -27,34 +39,41 @@ style=authoryear-ibid,
 
 %------------------------ Cover -----------------------
 
-  %------------------------ Judul -----------------------
+  %//------------------------ Judul -----------------------
 
-  {\huge \bfseries Laporan Acara 9 dan 10 PHP}
+  {\huge \bfseries Laporan Something}
   \\[0.7em]
 
-  %------------------------ Mata Kuliah -----------------------
+  %//------------------------ Mata Kuliah -----------------------
 
-  Disusun untuk memenuhi tugas mata kuliah {\it Workshop Sistem Informasi Berbasis Web}
-  \\[0.3em]
+  Disusun untuk memenuhi tugas mata kuliah 
+  {Something}
+  % {\it Workshop Mobile Applications}
+  % {\it Workshop Sistem Informasi berbasis Web}
+  % {\it Matematika Diskrit}
 
-  %------------------------ Nama Dosen -----------------------
+  %//------------------------ Nama Dosen -----------------------
 
-  Dosen Pengampu: {Khafidurrohman Agustianto, S.Pd, M.Eng.}
+  Dosen Pengampu: 
+  {Someone}
+  % {Ery Setiyawan Jullev Atmadji S.Kom M.Cs}
+  % {Muhammad Hafidh Firmansyah S.Tr.Kom. M.Sc.}
+  % {Khafidurrohman Agustianto, S.Pd, M.Eng.}
   \\[5em]
 
-  %------------------------ Logo Poliyeay -----------------------
+  %//------------------------ Logo Poliyeay -----------------------
 
-  \includegraphics[width=13em]{figs/poliyeay-bw.png}
+  \includegraphics[width=12em]{figs/poliyeay-bw.png}
   \\[3em]
 
-  %------------------------ Pribadi -----------------------
+  %//------------------------ Pribadi -----------------------
 
   {\large Raihan Achmad Dani Firmansyah}
   \\[0.7em]
   {\large E41210369}
-  \\[13em]
+  \\[10em]
 
-  %------------------------ Kampus/Prodi/Jurusan -----------------------
+  %//------------------------ Kampus/Prodi/Jurusan -----------------------
 
   {\Large Program Studi Teknik Informatika}
     \\[0.7em]
@@ -64,70 +83,36 @@ style=authoryear-ibid,
     \\[0.7em]
   {\Large 2021}
 
+%---------------------------------------------------------------------
+
 \end{center}
 
 %------------------------ Daftar Isi -----------------------
 
-\newpage
-\begin{center}
-\tableofcontents
-\end{center}
+% \newpage
+% \begin{center}
+% \tableofcontents
+% \end{center}
 
 %------------------------ Pendahuluan -----------------------
 
-\newpage
-\section{Pendahuluan}
-PHP: Hypertext Preprocessor (sebelumnya disebut Personal Home Pages) atau hanya PHP saja, adalah bahasa skrip dengan fungsi umum yang terutama digunakan untuk pengembangan web. Bahasa ini awalnya dibuat oleh seorang pemrogram Denmark-Kanada Rasmus Lerdorf pada tahun 1994. Implementasi referensi PHP sekarang diproduksi oleh The PHP Group. PHP awalnya merupakan singkatan dari Personal Home Page, tetapi sekarang merupakan singkatan dari inisialisasi rekursif PHP: Hypertext Preprocessor. \autocite{wikiphp}
+% \newpage
+% \section{Pendahuluan}
+
+% PHP: Hypertext Preprocessor (sebelumnya disebut Personal Home Pages) atau hanya PHP saja, adalah bahasa skrip dengan fungsi umum yang terutama digunakan untuk pengembangan web. Bahasa ini awalnya dibuat oleh seorang pemrogram Denmark-Kanada Rasmus Lerdorf pada tahun 1994. Implementasi referensi PHP sekarang diproduksi oleh The PHP Group. PHP awalnya merupakan singkatan dari Personal Home Page, tetapi sekarang merupakan singkatan dari inisialisasi rekursif PHP: Hypertext Preprocessor. \autocite{wikiphp}
+
+% Flutter adalah framework open source dari Google untuk membangun aplikasi yang cantik, dikompilasi secara native, dan multi-platform dari satu codebase. Versi pertama Flutter dikenal sebagai ”Sky” dan berjalan pada sistem operasi Android. Diresmikan
+% pada perhelatan Dart developer summit tahun 2015, dengan tujuan untuk mampu merender grafis secara konsisten pada 120 bingkai per detik. Flutter 1.0 dirilis pada tanggal 4 Desember 2018 di acara Flutter Live, yang menunjukkan versi ”stabil” pertama dari Framework Flutter. Flutter ditulis dengan bahasa pemograman Dart. Flutter berjalan di mesin virtual Dart yang dilengkapi mesin eksekusi Kompilasi tepat waktu (Inggris: just-in-time). Saat melakukan pemograman atau debugging aplikasi, Flutter menggunakan Kompilasi tepat waktu untuk melakukan ”hot reload”, yang dapat menambahkan hasil modifikasi kode langsung ke aplikasi yang sedang berjalan.
 
 % %------------------------ Hasil Praktik -----------------------
-
 \newpage
 \section{Hasil Praktik}
-
-\hfill \break
-
-\subsection{Acara 9}
-  \begin{center}
-
-  \begin{enumerate}
-    \item 
-
-  \end{enumerate}
-
-  \end{center}
-\subsection{Acara 10}
-  \begin{center}
-
-  \begin{enumerate}
-    \item 
-
-
-  \end{enumerate}
-
-  \end{center}
-
-%------------------------ Kesimpulan -----------------------
-
-  \newpage
-  \section{Kesimpulan}
-    OOP lebih cepat dan lebih mudah untuk dieksekusi, OOP menyediakan struktur yang jelas untuk program OOP membantu menjaga kode PHP DRY "Don't Repeat Yourself", dan membuat kode lebih mudah untuk di-develop, dimodifikasi, dan di-debug. OOP memungkinkan untuk membuat aplikasi penuh yang dapat digunakan kembali dengan lebih sedikit kode dan waktu pengembangan yang lebih singkat \cite{w3php}
-
-
-%------------------------ Daftar Pustaka -----------------------
-
-  \newpage
-
-  % ==== stack nocite disini aja
-  \nocite{bkpmphp}
-  \nocite{Austin2019}
-  % \nocite{wstack}
-
-  \begin{center}
-  \printbibliography[heading=bibintoc,title={Daftar Pustaka}]
-  \end{center}
-
-%------------------------ End of Document -----------------------
-
+\begin{enumerate}
+  \item main.dart
+    \begin{lstlisting}[breaklines=true]
+      add some code
+    \end{lstlisting}
+\end{enumerate}
 
 %------------------------ Components -----------------------
 
@@ -148,6 +133,41 @@ PHP: Hypertext Preprocessor (sebelumnya disebut Personal Home Pages) atau hanya 
 %       \hline
 %   \end{tabular}
 
+% ==== figure ====
+% \begin{figure}[h]
+%   \centering
+%   \includegraphics[width=30em]{figs/}
+%   \caption{idk}
+% \end{figure}
+
+% ==== code blocks or lstlisting ====
+% \begin{lstlisting}[breaklines=true]
+% \end{lstlisting}
+
 %-----------------------------------------------------------
+
+%------------------------ Kesimpulan -----------------------
+
+  % \newpage
+  % \section{Kesimpulan}
+  %   OOP lebih cepat dan lebih mudah untuk dieksekusi, OOP menyediakan struktur yang jelas untuk program OOP membantu menjaga kode PHP DRY ``Don't Repeat Yourself'', dan membuat kode lebih mudah untuk di-develop, dimodifikasi, dan di-debug. OOP memungkinkan untuk membuat aplikasi penuh yang dapat digunakan kembali dengan lebih sedikit kode dan waktu pengembangan yang lebih singkat. \autocite{w3php}
+
+%------------------------ Daftar Pustaka -----------------------
+
+  % \newpage
+
+  % % ==== stack nocite disini aja
+  % % \nocite{bkpmphp}
+  % % \nocite{wstack}
+  % \nocite{bkpmdart}
+  % \nocite{dicodingdart}
+
+  % \begin{center}
+  % \printbibliography[heading=bibintoc,title={Daftar Pustaka}]
+  % \end{center}
+
+%------------------------ End of Document -----------------------
+
+
 
 \end{document}
