@@ -1,35 +1,68 @@
-\documentclass[12pt, a4paper]{report}
+% ---------------- Setup Paper ----------------
+\documentclass[a4paper, 12pt]{article}
 
-\usepackage[a4paper]{geometry}
-\usepackage{graphicx}
-\usepackage{mathptmx}
-\usepackage{biblatex}
+% ---------------- Packages to use  ----------------
+\usepackage{indentfirst} % indent first paraghraph
+\usepackage{mathptmx} % use adobe times roman
+\usepackage{setspace} % spacing
+\usepackage{geometry} % setup paper size or margin
+ \geometry{
+ top=4cm,
+ left=4cm,
+ right=3cm,
+ bottom=3cm,
+ }
+\onehalfspacing
+
+\renewcommand{\contentsname}{\centering Daftar Isi}
+\renewcommand{\listtablename}{\centering Daftar Tabel}
+
+% remove later
+\title{Sections and Subsections}
+\author{Raihan}
+\date{\today}
 
 \begin{document}
-\begin{center}
 
-  %------------------------ Cover -----------------------
+\maketitle
 
-  {\huge \bfseries MAKALAH\\[0.7em]BLA BLA BLA}
-  \\[0.7em]
-  Disusun untuk memenuhi tugas mata kuliah {\it insert di sini}
-  \\[0.3em]
-  Dosen Pengampu: Nama Dosen Anda
-  \\[5em]
-  \includegraphics[width=13em]{figs/poliyeay.png}
-  \\[5em]
-{\normalfont \bfseries Nama Anda}
-  \\[0.7em]
-{\normalfont \bfseries NIM Anda}
-  \\[5em]
-{\Large \bfseries Program Studi Teknik Informatika}
-  \\[0.7em]
-{\Large \bfseries Jurusan Teknik Informasi}
-  \\[0.7em]
-{\Large \bfseries Politeknik Negeri Jember}
-  \\[0.7em]
-{\Large \bfseries 2021}
+\newpage
 
-\end{center}
+\tableofcontents
+
+\newpage
+
+\listoftables
+
+\newpage
+
+\newcommand\shortlorem{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. }
+
+\section{Introduction}
+\hspace{0.7em}\shortlorem
+
+\subsection*{Unnumbered Subsection}
+\shortlorem
+
+\subsection{Second Subsection}
+\shortlorem
+
+\subsection{Data Collection}
+
+\hspace{1.3em}Table \ref{tab:data} shows the data collected.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+X & Y \\
+\hline
+1 & 2 \\
+3 & 4 \\
+\hline
+\end{tabular}
+\caption{Data collected}
+\label{tab:data}
+\end{table}
 
 \end{document}
