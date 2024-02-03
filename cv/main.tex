@@ -1,0 +1,332 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Class
+% Version 2.0 (12/10/23)
+%
+% This class originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Omar Roldan
+% Based on a template by  Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{multicol}
+\setlength{\columnsep}{0mm}
+%----------------------------------------------------------------------------------------
+\usepackage{lipsum}  
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	{ \fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{Raihan Achmad D. F.}}}} % First name
+
+	\vspace{6pt}
+
+	{\Large Android $\sim$ Web Developer} % Career or current job title
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth} % 20% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% \icon{Globe}{11}{\href{http://www.google.com}{portafolio.com}}\\ 
+	% \icon{Phone}{11}{11 1111 1111}\\
+	\icon{Envelope}{11}{\href{mailto:17radf@gmail.com}{17radf@gmail.com}}\\
+	\icon{MapMarker}{11}{Indonesia}\\
+
+\end{minipage}
+\begin{minipage}[t]{0.27\textwidth} % 27% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	% \icon{Envelope}{11}{\href{mailto:email@example.com}{email.email@example.com}}\\	
+	\icon{Github}{11}{\href{https://github.com/uma-dev}{github.com/raihanadf}}\\
+	\icon{LinkedinSquare}{11}{\href{https://www.linkedin.com/in/raihanadf}{/in/raihanadf}}\\
+
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+\begin{minipage}[t]{0.46\textwidth}
+	\cvsect{Summary}
+	\vspace{-6pt}
+
+	%Dummy text
+	Raihan is an undergraduate student majoring in Informatics Engineering at the State Polytechnic of Jember. He has experience in android and also web development with a passion for creating software solutions, is skilled in several programming languages, and is a self-taught Linux enthusiast.
+
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.465\textwidth}
+	\cvsect{Skills}
+	\vspace{-6pt}
+
+	\begin{minipage}[t]{0.2\textwidth}
+		\textbf{Languages:}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.73\textwidth}
+		Java, JavaScript, Kotlin, Dart, PHP, SQL, NoSQL, Bash.
+	\end{minipage}
+	\vspace{4mm}
+
+	\begin{minipage}[t]{0.2\textwidth}
+		\textbf{Technologies:}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.73\textwidth}
+		Laravel, MariaDB, MongoDB, React.js, Node.js, Express.js, Android, Flutter, Tailwind, Material, LaTeX, Git.
+	\end{minipage}
+	\vspace{2mm}
+
+	\begin{minipage}[t]{0.2\textwidth}
+		\textbf{Soft Skills:}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.73\textwidth}
+		Teamwork, Problem Solving, Time Management, Communication
+	\end{minipage}
+
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\cvsect{Experience}
+\begin{entrylist}
+	\entry
+	{02/2024 -- Present}
+	{Mobile Developer Cohort}
+	{Bangkit Academy led by Google, Tokopedia, Gojek, \& Traveloka}
+	{}
+	\entry
+	{06/2023 -- 12/2023}
+	{Research Staff}
+	{PT. Bensae Kreasi Indonesia}
+	{Involved in research of a VR-based simulator for post-stroke physiotherapy, focusing on the ergonomics of the interface and user experience. The research process follows a five-plane model and human-centered design methodology. Conducted Usability testing to evaluate the interface design and user experience.}
+	\entry
+	{02/2023 -- 12/2023}
+	{Contract Laravel Developer}
+	{State Polytechnic of Jember}
+	{\vspace{-10pt}
+		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+			\item {Built and maintaining payment and journaling system for book publishing company.}
+			\item {Collaboratively brainstorming on how the system architecture would work.}
+			      \vspace{-7 pt}
+			      \\ \\
+			      {* was working with my senior and my lecturer as the tech lead for the team.}
+		\end{itemize}
+		\texttt{PHP} \slashsep \texttt{Laravel} \slashsep \texttt{SQL} }
+	\entry
+	{02/2024 -- Present}
+	{Beginner Android Developer Scholar}
+	{Indosat Ooredoo Hutchison Digital Camp}
+	{}
+	\entry
+	{01/2020 -- 03/2020}
+	% \\\footnotesize{scholarship holder}
+	{Digital Marketing Intern}
+	{Primaland}
+	{Learnt how to do "marketing" on Facebook and other marketplace and assisted Content Writer on publishing company products.}
+	\entry
+	{10/2019 -- 12/2019}
+	% \\\footnotesize{scholarship holder}
+	{Software Engineer Intern}
+	{Primaland}
+	{{Developed a real estate front-end website, and admin panel for the startup company. Collaboratively built an employee scoring system application with intern team.}
+	\vspace{-7 pt}
+	\\ \\
+	{* was being an intern when I was on vocational high school.}
+	\\
+	\texttt{Framework7} \slashsep \texttt{PHP} \slashsep \texttt{SQL} \slashsep \texttt{Excel}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	VOLUNTEER
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Volunteer}
+\begin{entrylist}
+	\entry
+	{08/2023 -- 08/2023}
+	{Back End Developer}
+	{KOICA}
+	{Participating in "World Friends Korea" program between State Polytechnic of Jember and Kyungpook National University on the project named "The Smart Trash Bin". Built a web server that integrates the front-end and an Arduino for the team project.
+	\vspace{-7 pt}
+	\\ \\
+	{* achieved 2nd place winner for the project.}
+	}
+\end{entrylist}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Education}
+\begin{entrylist}
+	\entry
+	{08/2021 -- 06/2025 \\\footnotesize{expected graduation}}
+	{Informatics Engineering}
+	{State Polytechnic of Jember}
+	{Completed courses in data structures, algorithms, software engineering, web development, and system integration. Gained practical experience through internships and class projects, developing applications and systems for various industries.}
+	\entry
+	{07/2018 -- 06/2021}
+	{Software Engineering}
+	{Vocational High School State 1 of Bondowoso}
+	{\vspace{-10pt}
+		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+			\item Ranked 6th as a best student in parallel class on graduation.
+			\item Ranked 3rd as a best student in 10th class.
+			\item Ranked 2nd as a best student in 11th class.
+			\item Ranked 1st as a best student in 12th class.
+		\end{itemize}
+	}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	Licenses & Certificate
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Licenses \& certifications}
+\begin{entrylist}
+	\entry
+	{11/2022 -- 11/2025
+		\\\footnotesize{631202512300022...}}
+	{Junior Mobile Programmer}
+	{Badan Nasional Sertifikasi Profesi}
+	{Learnt how layout, design \& theming, interactivity, assets \& media, navigating \& routing works on flutter. And a little bit of data \& backend too including state management (BLoC and Getx).}
+	\entry
+	{10/2022 -- 10/2025
+		\\\footnotesize{JMZVGYJN3ZN9}}
+	{Belajar Dasar Pemrograman Web}
+	{Dicoding Indonesia}
+	{Learnt how the website and internet works at first and then HTML \& CSS. Lastly, how to implement everything we learned into a simple web project.}
+	\entry
+	{10/2022 -- 10/2025
+		\\\footnotesize{QLZ9KJNL7Z5D}}
+	{Belajar Dasar Pemrograman JavaScript}
+	{Dicoding Indonesia}
+	{Learnt fundamental JavaScript for developing web application using Node.js.}
+	\entry
+	{10/2022 -- 10/2025
+		\\\footnotesize{EYX4911R5PDL}}
+	{Belajar Membuat Front-End Web untuk Pemula}
+	{Dicoding Indonesia}
+	{Learnt how to build interactive front-end application that has storage feature using web storage as well.}
+	\entry
+	{03/2022 -- 03/2025
+		\\\footnotesize{GRX5K5DRVZ0M}}
+	{Memulai Pemrograman dengan Dart}
+	{Dicoding Indonesia}
+	{Built Dart programs using IDE.}
+	\entry
+	{10/2022 -- 10/2025
+		\\\footnotesize{JLX11Q1MGX72}}
+	{Belajar Prinsip Pemrograman SOLID}
+	{Dicoding Indonesia}
+	{Understood five concept of SOLID and ready to implement it for developing apps.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Projects}
+\begin{entrylist}
+	\entry
+	{Contract Project}
+	{Book Publishing Company Management System}
+	{Private Repo}
+	{
+		\vspace{-10 pt}
+		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+			\item {Collaboratively designed the system database and system architecture.}
+			\item {Built and maintain payment and journaling system.}
+		\end{itemize}
+		\texttt{PHP} \slashsep \texttt{Laravel} \slashsep \texttt{Filament} \slashsep \texttt{Tailwind} \slashsep \texttt{SQL}
+	}
+	\entry
+	{Semester Project}
+	{Employee Attendance System}
+	{github.com/raihanadf/java-presensi-non-pns}
+	{\vspace{-10 pt}
+		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+
+			\item {Built automatic attendance system for civil servant and "P3K" staff.}
+			\item {Integrates the system with attending dates to each class and RFID for scanning.}
+			\item {Designed the system database and collaborate with team on how to work with the system architecture and flows.}
+		\end{itemize}
+		\texttt{Java} \slashsep \texttt{NetBeans} \slashsep \texttt{SQL}}
+	\entry
+	{Semester Project}
+	{Suki Mobile}
+	{github.com/Ongghuen/suki-mobile}
+	{\vspace{-10 pt}
+		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+			\item Designed the User Interface and User Experience.
+			\item Built a mobile app for suki furniture e-commerce. This includes payment, multiple transactions, items features such as searching, filtering, etc. Implementing state management with BLoC.
+		\end{itemize}
+		\texttt{Flutter} \slashsep \texttt{BLoC}}
+	\entry
+	{Semester Project}
+	{Suki Web}
+	{github.com/Ongghuen/suki-web-backend}
+	{\vspace{-10 pt}
+		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+			\item Collaboratively built a web management system including dashboard for the suki admin.
+			\item Implement and Built an API system for mobile to access.
+		\end{itemize}
+		\texttt{Laravel} \slashsep \texttt{Bootstrap}}
+	\entry
+	{Semester Project}
+	{Diskoperindag Mobile}
+	{github.com/Ongghuen/diskoperindag-mobile}
+	{\vspace{-10 pt}
+		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+			\item Designed the User Interface and User Experience.
+			\item Developed news feed system, notification, and training-tracking system. Implementing the application with recommended android architecture tools and pattern, this includes using navigation compose, fragments, viewmodel, binding, etc.
+		\end{itemize}
+		\texttt{Android} \slashsep \texttt{Material} \slashsep \texttt{Firebase}
+	}
+	\entry
+	{Semester Project}
+	{Diskoperindag Web}
+	{github.com/Ongghuen/diskoperindag-web}
+	{\vspace{-10 pt}
+		\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+			\item Implement and Built an API system for mobile to access.
+			\item Integrated news system from firebase in the management system for sending notification to masses or specific person.
+		\end{itemize}
+		\texttt{Laravel} \slashsep \texttt{Bootstrap}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Languages}
+\vspace{-6pt}
+
+\hspace{26mm} \textbf{English} - Professional working proficiency, \textbf{ Indonesian} - Native or bilingual proficiency
+%----------------------------------------------------------------------------------------
+
+\end{document}
