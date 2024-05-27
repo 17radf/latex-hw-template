@@ -139,3 +139,6 @@
 
 % Command to output a separator slash between lists, e.g. '  /  '
 \newcommand{\slashsep}{\hspace{3mm}/\hspace{3mm}}
+
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
